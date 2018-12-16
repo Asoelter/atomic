@@ -18,6 +18,7 @@ RectangleParent::RectangleParent(Point position, float width, float height, Colo
 		(position.x() - (width / 2)) , (position.y() - (height / 2)) , 0.0f
 	};
 
+
 	vbo_.addIndex(positions, 3);
 }
 

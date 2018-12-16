@@ -1,9 +1,10 @@
 #include "bordered_rectangle.h"
 
-BorderedRectangle::BorderedRectangle(Point position, float width, 
-				  float height, Color color, Color borderColor)
+BorderedRectangle::BorderedRectangle(Point position, float width, float height, Color color, Color borderColor)
 	: RectangleParent(position, width, height, color)
 	, shader_("src/res/shaders/bordered_rect.vs", "src/res/shaders/bordered_rect.fs")
+	, translation_(1.0f)
+	, transformLoc_(0)
 {
 	float colors[3] = {color.red(), color.green(), color.blue()};
 
@@ -19,11 +20,14 @@ BorderedRectangle::BorderedRectangle(Point position, float width,
 
 	updateHorizontalBorderLimits();
 	updateVerticalBorderLimits();
+
+	transformLoc_ = glGetUniformLocation(shader_.id(), "u_translation");
 }
 
 void BorderedRectangle::draw() const
 {
 	shader_.bind();
+	glUniformMatrix4fv(transformLoc_, 1, GL_FALSE, glm::value_ptr(translation_));
 	RectangleParent::draw();
 }
 
@@ -59,12 +63,14 @@ void BorderedRectangle::setHeight(const float& height)
 
 void BorderedRectangle::moveRight(const float& increment)
 {
+	translation_ = glm::translate(translation_, glm::vec3(increment, 0.0, 0.0));
 	RectangleParent::moveRight(increment);
 	updateHorizontalBorderLimits();
 }
 
 void BorderedRectangle::moveUp(const float& increment)
 {
+	translation_ = glm::translate(translation_, glm::vec3(0.0, increment, 0.0));
 	RectangleParent::moveUp(increment);
 	updateVerticalBorderLimits();
 }

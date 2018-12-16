@@ -11,6 +11,12 @@ bordered_rectangle.h
 /home/adam/workspace/openGL/games/engine/src/bordered_rectangle.h
 
 /home/adam/workspace/openGL/games/engine/src/bordered_rectangle.h
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
 rectangle_parent.h
 /home/adam/workspace/openGL/games/engine/src/rectangle_parent.h
 shader.h
@@ -71,6 +77,12 @@ rectangle.h
 /home/adam/workspace/openGL/games/engine/src/rectangle.h
 
 /home/adam/workspace/openGL/games/engine/src/rectangle.h
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtc/type_ptr.hpp
+-
 rectangle_parent.h
 /home/adam/workspace/openGL/games/engine/src/rectangle_parent.h
 shader.h

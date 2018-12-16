@@ -1,6 +1,10 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 #include "rectangle_parent.h"
 #include "shader.h"
 
@@ -24,7 +28,8 @@ class Rectangle : public RectangleParent
 
 	private:
 		Shader			shader_;
-
+		glm::mat4		translation_;
+		unsigned		transformLoc_;
 };
 
 #endif //RECTANGLE_H
