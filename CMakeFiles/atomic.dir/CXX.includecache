@@ -185,6 +185,8 @@ string
 -
 iostream
 -
+color.h
+/home/adam/workspace/openGL/games/engine/src/color.h
 
 /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
 stddef.h

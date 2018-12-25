@@ -56,11 +56,17 @@ void Window::update() const
 {
 	glfwSwapBuffers(window_);
 	glfwPollEvents();
+	glClear(GL_COLOR_BUFFER_BIT);
 
 	if(glfwGetKey(window_, GLFW_KEY_ESCAPE))
 	{
 		glfwSetWindowShouldClose(window_, true);
 	}
+}
+
+void Window::setBackGroundColor(Color c)
+{
+	glClearColor(c.red(), c.green(), c.blue(), 1.0f);
 }
 
 void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height)

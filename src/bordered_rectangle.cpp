@@ -15,13 +15,13 @@ BorderedRectangle::BorderedRectangle(Point position, float width, float height, 
 	float borderColors[3] = {borderColor.red(), borderColor.green(), borderColor.blue()};
 
 	shader_.bind();
-	unsigned int borderColorLocation = glGetUniformLocation(shader_.id(), "u_BorderColor");
+	unsigned borderColorLocation = glGetUniformLocation(shader_.id(), "u_BorderColor");
 	glUniform3fv(borderColorLocation, 1, borderColors);
 
 	updateHorizontalBorderLimits();
 	updateVerticalBorderLimits();
 
-	transformLoc_ = glGetUniformLocation(shader_.id(), "u_translation");
+	transformLoc_   = glGetUniformLocation(shader_.id(), "u_translation");
 }
 
 void BorderedRectangle::draw() const
@@ -84,7 +84,7 @@ void BorderedRectangle::updateHorizontalBorderLimits() const
 
 	if(xMaxLimit > 0.0f)
 	{
-		xMaxBorderLimit = xMaxLimit + (0.05 * RectangleParent::width());
+		xMaxBorderLimit = xMaxLimit - (0.05 * RectangleParent::width());
 	}
 	else 
 	{
@@ -93,7 +93,7 @@ void BorderedRectangle::updateHorizontalBorderLimits() const
 
 	if(xMinLimit > 0.0f)
 	{
-		xMinBorderLimit = xMinLimit - (0.05 * RectangleParent::width());
+		xMinBorderLimit = xMinLimit + (0.05 * RectangleParent::width());
 	}
 	else
 	{
@@ -106,28 +106,11 @@ void BorderedRectangle::updateHorizontalBorderLimits() const
 
 void BorderedRectangle::updateVerticalBorderLimits() const
 {
-	float yMaxLimit			= RectangleParent::yPos() + (RectangleParent::height() / 2);
-	float yMinLimit			= RectangleParent::yPos() - (RectangleParent::height() / 2);
-	float yMaxBorderLimit	= 0;
-	float yMinBorderLimit	= 0;
+	float yMaxLimit	= RectangleParent::yPos() + (RectangleParent::height() / 2);
+	float yMinLimit	= RectangleParent::yPos() - (RectangleParent::height() / 2);
 
-	if(yMaxLimit > 0.0f)
-	{
-		yMaxBorderLimit = yMaxLimit + (0.05 * RectangleParent::height());
-	}
-	else
-	{
-		yMaxBorderLimit = yMaxLimit - (0.05 * RectangleParent::height());
-	}
-
-	if(yMinLimit > 0.0f)
-	{
-		yMinBorderLimit = yMinLimit - (0.05 * RectangleParent::height());
-	}
-	else
-	{
-		yMinBorderLimit = yMinLimit + (0.05 * RectangleParent::height());
-	}
+	float yMaxBorderLimit = yMaxLimit - (0.05 * RectangleParent::height());
+	float yMinBorderLimit = yMinLimit + (0.05 * RectangleParent::height());
 
 	shader_.setFloat("yMax", yMaxBorderLimit);
 	shader_.setFloat("yMin", yMinBorderLimit);

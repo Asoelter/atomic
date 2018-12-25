@@ -77,6 +77,7 @@ CMakeFiles/atomic.dir/src/vertex_buffer.cpp.o
  /home/adam/workspace/openGL/games/engine/src/vertex_buffer.cpp
  /home/adam/workspace/openGL/games/engine/src/vertex_buffer.h
 CMakeFiles/atomic.dir/src/window.cpp.o
+ /home/adam/workspace/openGL/games/engine/src/color.h
  /home/adam/workspace/openGL/games/engine/src/window.cpp
  /home/adam/workspace/openGL/games/engine/src/window.h
  /usr/include/glfw-3.2.1/include/GLFW/glfw3.h

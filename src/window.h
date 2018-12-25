@@ -6,6 +6,8 @@
 #include <string>
 #include <iostream>
 
+#include "color.h"
+
 class Window
 {
 	public:
@@ -16,6 +18,8 @@ class Window
 		bool open()   const;
 		void close()  const;
 		void update() const;
+		void setBackGroundColor(Color c);
+		
 
 	private:
 		GLFWwindow* window_;

@@ -1,7 +1,7 @@
 #version 450 core
 
 out		vec4	fragColor;
-in		vec3	fragPosition;
+in		vec4	fragPosition;
 
 uniform vec3	u_Color;
 uniform vec3	u_BorderColor;

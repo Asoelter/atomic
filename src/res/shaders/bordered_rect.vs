@@ -2,10 +2,12 @@
 
 layout (location = 0) in vec3 position;
 
-out vec3 fragPosition;
+out vec4 fragPosition;
+
+uniform mat4 u_translation;
 
 void main()
 {
-	gl_Position = vec4(position, 1.0);
-	fragPosition = position;
+	gl_Position  = u_translation * vec4(position, 1.0);
+	fragPosition = u_translation * vec4(position, 1.0);
 }

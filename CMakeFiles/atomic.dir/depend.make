@@ -76,6 +76,7 @@ CMakeFiles/atomic.dir/src/vertex_array.cpp.o: src/vertex_array.h
 CMakeFiles/atomic.dir/src/vertex_buffer.cpp.o: src/vertex_buffer.cpp
 CMakeFiles/atomic.dir/src/vertex_buffer.cpp.o: src/vertex_buffer.h
 
+CMakeFiles/atomic.dir/src/window.cpp.o: src/color.h
 CMakeFiles/atomic.dir/src/window.cpp.o: src/window.cpp
 CMakeFiles/atomic.dir/src/window.cpp.o: src/window.h
 CMakeFiles/atomic.dir/src/window.cpp.o: /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
