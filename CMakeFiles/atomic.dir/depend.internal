@@ -11,6 +11,17 @@ CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o
  /home/adam/workspace/openGL/games/engine/src/vertex_array.h
  /home/adam/workspace/openGL/games/engine/src/vertex_buffer.h
  /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o
+ /home/adam/workspace/openGL/games/engine/src/bordered_rectangle.h
+ /home/adam/workspace/openGL/games/engine/src/bordered_square.cpp
+ /home/adam/workspace/openGL/games/engine/src/bordered_square.h
+ /home/adam/workspace/openGL/games/engine/src/color.h
+ /home/adam/workspace/openGL/games/engine/src/point.h
+ /home/adam/workspace/openGL/games/engine/src/rectangle_parent.h
+ /home/adam/workspace/openGL/games/engine/src/shader.h
+ /home/adam/workspace/openGL/games/engine/src/vertex_array.h
+ /home/adam/workspace/openGL/games/engine/src/vertex_buffer.h
+ /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
 CMakeFiles/atomic.dir/src/color.cpp.o
  /home/adam/workspace/openGL/games/engine/src/color.cpp
  /home/adam/workspace/openGL/games/engine/src/color.h
@@ -19,6 +30,7 @@ CMakeFiles/atomic.dir/src/element_buffer.cpp.o
  /home/adam/workspace/openGL/games/engine/src/element_buffer.h
 CMakeFiles/atomic.dir/src/main.cpp.o
  /home/adam/workspace/openGL/games/engine/src/bordered_rectangle.h
+ /home/adam/workspace/openGL/games/engine/src/bordered_square.h
  /home/adam/workspace/openGL/games/engine/src/color.h
  /home/adam/workspace/openGL/games/engine/src/element_buffer.h
  /home/adam/workspace/openGL/games/engine/src/main.cpp

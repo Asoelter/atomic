@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/atomic.dir/src/rectangle.cpp.o"
   "CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o"
   "CMakeFiles/atomic.dir/src/square.cpp.o"
+  "CMakeFiles/atomic.dir/src/bordered_square.cpp.o"
   "CMakeFiles/atomic.dir/src/window.cpp.o"
   "atomic.pdb"
   "atomic"

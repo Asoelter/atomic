@@ -272,6 +272,33 @@ src/bordered_rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/atomic.dir/build.make CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.s
 .PHONY : src/bordered_rectangle.cpp.s
 
+src/bordered_square.o: src/bordered_square.cpp.o
+
+.PHONY : src/bordered_square.o
+
+# target to build an object file
+src/bordered_square.cpp.o:
+	$(MAKE) -f CMakeFiles/atomic.dir/build.make CMakeFiles/atomic.dir/src/bordered_square.cpp.o
+.PHONY : src/bordered_square.cpp.o
+
+src/bordered_square.i: src/bordered_square.cpp.i
+
+.PHONY : src/bordered_square.i
+
+# target to preprocess a source file
+src/bordered_square.cpp.i:
+	$(MAKE) -f CMakeFiles/atomic.dir/build.make CMakeFiles/atomic.dir/src/bordered_square.cpp.i
+.PHONY : src/bordered_square.cpp.i
+
+src/bordered_square.s: src/bordered_square.cpp.s
+
+.PHONY : src/bordered_square.s
+
+# target to generate assembly for a file
+src/bordered_square.cpp.s:
+	$(MAKE) -f CMakeFiles/atomic.dir/build.make CMakeFiles/atomic.dir/src/bordered_square.cpp.s
+.PHONY : src/bordered_square.cpp.s
+
 src/color.o: src/color.cpp.o
 
 .PHONY : src/color.o
@@ -618,6 +645,9 @@ help:
 	@echo "... src/bordered_rectangle.o"
 	@echo "... src/bordered_rectangle.i"
 	@echo "... src/bordered_rectangle.s"
+	@echo "... src/bordered_square.o"
+	@echo "... src/bordered_square.i"
+	@echo "... src/bordered_square.s"
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"

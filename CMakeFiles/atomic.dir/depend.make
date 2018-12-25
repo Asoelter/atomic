@@ -11,6 +11,17 @@ CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o: src/vertex_array.h
 CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o: src/vertex_buffer.h
 CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o: /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
 
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/bordered_rectangle.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/bordered_square.cpp
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/bordered_square.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/color.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/point.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/rectangle_parent.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/shader.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/vertex_array.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: src/vertex_buffer.h
+CMakeFiles/atomic.dir/src/bordered_square.cpp.o: /usr/include/glfw-3.2.1/include/GLFW/glfw3.h
+
 CMakeFiles/atomic.dir/src/color.cpp.o: src/color.cpp
 CMakeFiles/atomic.dir/src/color.cpp.o: src/color.h
 
@@ -18,6 +29,7 @@ CMakeFiles/atomic.dir/src/element_buffer.cpp.o: src/element_buffer.cpp
 CMakeFiles/atomic.dir/src/element_buffer.cpp.o: src/element_buffer.h
 
 CMakeFiles/atomic.dir/src/main.cpp.o: src/bordered_rectangle.h
+CMakeFiles/atomic.dir/src/main.cpp.o: src/bordered_square.h
 CMakeFiles/atomic.dir/src/main.cpp.o: src/color.h
 CMakeFiles/atomic.dir/src/main.cpp.o: src/element_buffer.h
 CMakeFiles/atomic.dir/src/main.cpp.o: src/main.cpp

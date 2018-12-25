@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adam/workspace/openGL/games/engine/src/bordered_rectangle.cpp" "/home/adam/workspace/openGL/games/engine/CMakeFiles/atomic.dir/src/bordered_rectangle.cpp.o"
+  "/home/adam/workspace/openGL/games/engine/src/bordered_square.cpp" "/home/adam/workspace/openGL/games/engine/CMakeFiles/atomic.dir/src/bordered_square.cpp.o"
   "/home/adam/workspace/openGL/games/engine/src/color.cpp" "/home/adam/workspace/openGL/games/engine/CMakeFiles/atomic.dir/src/color.cpp.o"
   "/home/adam/workspace/openGL/games/engine/src/element_buffer.cpp" "/home/adam/workspace/openGL/games/engine/CMakeFiles/atomic.dir/src/element_buffer.cpp.o"
   "/home/adam/workspace/openGL/games/engine/src/main.cpp" "/home/adam/workspace/openGL/games/engine/CMakeFiles/atomic.dir/src/main.cpp.o"

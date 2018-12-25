@@ -24,6 +24,7 @@ add_executable(atomic src/main.cpp
 			   src/rectangle.h			src/rectangle.cpp
 			   src/bordered_rectangle.h src/bordered_rectangle.cpp
 			   src/square.h				src/square.cpp
+			   src/bordered_square.h	src/bordered_square.cpp
 			   src/window.h				src/window.cpp
 			   )
 

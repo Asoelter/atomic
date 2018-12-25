@@ -19,7 +19,6 @@ class Window
 		void close()  const;
 		void update() const;
 		void setBackGroundColor(Color c);
-		
 
 	private:
 		GLFWwindow* window_;
