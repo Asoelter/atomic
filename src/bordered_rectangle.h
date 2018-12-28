@@ -14,17 +14,10 @@ class BorderedRectangle : public RectangleParent
 		BorderedRectangle(Point position, float width, 
 						  float height, Color color, Color borderColor);
 
-		virtual void	draw  ()	 const;
+		virtual void draw() const;
 
-		virtual float	width ()	 const;
-		virtual float	height()	 const;
-		virtual float	xPos  ()	 const;
-		virtual float	yPos  ()	 const;
-
-		virtual void	setWidth	(const float& width);
-		virtual void	setHeight	(const float& height);
-		virtual void	moveRight	(const float& increment);
-		virtual void	moveUp		(const float& increment);
+		virtual void moveRight(const float& increment);
+		virtual void moveUp(const float& increment);
 
 
 	private:
