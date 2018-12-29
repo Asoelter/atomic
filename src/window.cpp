@@ -1,6 +1,13 @@
 #include "window.h"
 
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+	Window* win = (Window*)glfwGetWindowUserPointer(window);
+	win->keys_[key] = action != GLFW_RELEASE;
+}
+
 Window::Window(unsigned int width, unsigned int height, const std::string& title)
+	: keys_()
 {
 	if(!glfwInit())
 	{
@@ -29,7 +36,10 @@ Window::Window(unsigned int width, unsigned int height, const std::string& title
 
 	glViewport(0, 0, width, height);
 
+	glfwSetKeyCallback(window_, keyCallback);
+
 	glfwSetFramebufferSizeCallback(window_, framebuffer_size_callback);
+	glfwSetWindowUserPointer(window_, this);
 }
 
 Window::~Window()
@@ -69,7 +79,13 @@ void Window::setBackGroundColor(Color c)
 	glClearColor(c.red(), c.green(), c.blue(), 1.0f);
 }
 
+bool Window::keyIsPressed(Key key)
+{
+	return keys_[static_cast<int>(key)];
+}
+
 void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
 }
+
