@@ -50,8 +50,11 @@ void BorderedRectangle::updateHorizontalBorderLimits() const
 	float xMaxLimit	= RectangleParent::xPos() + (RectangleParent::width()  / 2);
 	float xMinLimit	= RectangleParent::xPos() - (RectangleParent::width()  / 2);
 
-	float xMaxBorderLimit = xMaxLimit - (0.05 * RectangleParent::width());
-	float xMinBorderLimit = xMinLimit + (0.05 * RectangleParent::width());
+	//float xMaxBorderLimit = xMaxLimit - (0.05 * RectangleParent::width());
+	//float xMinBorderLimit = xMinLimit + (0.05 * RectangleParent::width());
+
+	float xMaxBorderLimit = xMaxLimit - 0.007;
+	float xMinBorderLimit = xMinLimit + 0.007;
 
 	shader_.bind();
 	shader_.setFloat("xMax", xMaxBorderLimit);
@@ -63,8 +66,11 @@ void BorderedRectangle::updateVerticalBorderLimits() const
 	float yMaxLimit	= RectangleParent::yPos() + (RectangleParent::height() / 2);
 	float yMinLimit	= RectangleParent::yPos() - (RectangleParent::height() / 2);
 
-	float yMaxBorderLimit = yMaxLimit - (0.05 * RectangleParent::height());
-	float yMinBorderLimit = yMinLimit + (0.05 * RectangleParent::height());
+	//float yMaxBorderLimit = yMaxLimit - (0.05 * RectangleParent::height());
+	//float yMinBorderLimit = yMinLimit + (0.05 * RectangleParent::height());
+
+	float yMaxBorderLimit = yMaxLimit - 0.007;
+	float yMinBorderLimit = yMinLimit + 0.007;
 
 	shader_.bind();
 	shader_.setFloat("yMax", yMaxBorderLimit);
