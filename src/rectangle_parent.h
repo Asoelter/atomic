@@ -13,6 +13,7 @@ class RectangleParent
 
 		virtual void  draw()    const;
 
+	public:
 		virtual float width()   const;
 		virtual float height()  const;
 		virtual float xPos()    const;

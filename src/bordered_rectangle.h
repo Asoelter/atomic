@@ -19,6 +19,7 @@ class BorderedRectangle : public RectangleParent
 		virtual void moveRight(const float& increment);
 		virtual void moveUp(const float& increment);
 
+		static constexpr float borderWidth = 0.007f;
 
 	private:
 		void updateHorizontalBorderLimits() const;

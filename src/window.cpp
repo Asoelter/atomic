@@ -44,6 +44,7 @@ Window::Window(unsigned int width, unsigned int height, const std::string& title
 
 Window::~Window()
 {
+	glfwDestroyWindow(window_);
 	glfwTerminate();
 }
 
